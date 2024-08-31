@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,p{
+    font-family: "Playfair Display", serif;
+}
+
+h1{
+    @apply text-4xl font-medium text-center my-5;
+}
+
+body{
+    @apply bg-slate-700 text-white;
+}
+
+.container{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.container .quote{
+    @apply text-center my-5;
+}
+
+.container button{
+    @apply bg-blue-500 text-white px-4 py-2 rounded-md;
+    margin: 0 auto;
+    display: block;
+}
